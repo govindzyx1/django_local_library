@@ -26,7 +26,7 @@ SECRET_KEY = '*s#opb(9-ko7_df9m*$%snc=jrreft(x%4^$qvgha!-2jzejqa'
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localzyx.herokuapp.com"]
 
 
 # Application definition
