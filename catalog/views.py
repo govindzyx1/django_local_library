@@ -104,7 +104,6 @@ def subscribe(request):
         subject = 'Welcome to DataFlair'
         message = 'Hope you are enjoying your Django Tutorials'
         recepient = str(sub['Email'].value())
-        send_mail(subject, 
-            message, EMAIL_HOST_USER, [recepient], fail_silently = False)
-        return render(request, 'subscribe/success.html', {'recepient': recepient})
+        send_mail(subject,message, EMAIL_HOST_USER, [recepient], fail_silently = False)
+        return render(request, 'success.html', {'recepient': recepient})
     return render(request, 'mypage.html', {'form':sub})
