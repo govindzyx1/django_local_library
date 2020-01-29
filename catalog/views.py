@@ -98,9 +98,9 @@ def renew_book_librarian(request, pk):
     return render(request, 'book_renew_librarian.html', context)
 
 def subscribe(request):
-    sub = forms.Subscribe()
+    sub = Subscribe()
     if request.method == 'POST':
-        sub = forms.Subscribe(request.POST)
+        sub = Subscribe(request.POST)
         subject = 'Welcome to DataFlair'
         message = 'Hope you are enjoying your Django Tutorials'
         recepient = str(sub['Email'].value())
