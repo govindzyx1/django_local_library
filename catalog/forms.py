@@ -20,3 +20,8 @@ class RenewBookForm(forms.Form):
 
         # Remember to always return the cleaned data.
         return data
+    
+  class Subscribe(forms.Form):
+    Email = forms.EmailField()
+    def __str__(self):
+        return self.Email
