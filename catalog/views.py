@@ -107,4 +107,4 @@ def subscribe(request):
         send_mail(subject, 
             message, EMAIL_HOST_USER, [recepient], fail_silently = False)
         return render(request, 'subscribe/success.html', {'recepient': recepient})
-    return render(request, 'subscribe/index.html', {'form':sub})
+    return render(request, 'subscribe/mypage.html', {'form':sub})
