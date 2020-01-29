@@ -12,3 +12,6 @@ urlpatterns += [
 urlpatterns += [   
     path('book/<uuid:pk>/renew/', views.renew_book_librarian, name='renew-book-librarian'),
 ]
+urlpatterns += [   
+    path('send', views.subscribe, name='subscribe'),
+]
